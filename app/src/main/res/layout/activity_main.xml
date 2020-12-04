@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_weight="1"
+        android:background="#FF8888"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/img_activity_main_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/txt_activity_main_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="병무의 고속열차 (20154063 전병무)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_activity_main_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/img_activity_main_icon2"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_weight="1"
+            android:background="@drawable/main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_activity_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#666666">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5CD1E5"
+            android:text="나의 동네 위치"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:layout_marginBottom="100px"/>
+<!--            //android:onClick="makeReservation"-->
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="천안행"
+            android:background="#5CD1E5"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:layout_marginBottom="100px"/>
+<!--        //android:onClick="myReservation"-->
+
+        <!--<EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:hint="Enter the Address." />-->
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:layout_marginBottom="100px"
+            android:layout_weight="1"
+            android:background="#5CD1E5"
+            android:text="고속열차 주소 입력" />
+<!--        //android:onClick="movieRank"-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
